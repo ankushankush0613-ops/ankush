@@ -163,22 +163,24 @@
     <div class="form-connect">
       <!-- Contact Form -->
       <div class="form-section">
-        <form>
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <select required>
-            <option disabled selected>Select a service</option>
-            <option>Professional Fashion Retouching</option>
-            <option>High-End Beauty Retouching</option>
-            <option>jewellery enhancement retouching</option>
-            <option>Product Photography Enhancement</option>
-            <option>E-commerce Image Optimization</option>
-            <option>Video Editing & Color Grading</option>
-            <option>Custom Creative Solutions</option>
-          </select>
-          <textarea placeholder="Tell us about your project, timeline, and any specific requirements..." maxlength="500"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="bcf9fdd2-4c75-4493-aaf8-356df75bc9e7">
+            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="email" placeholder="Email Address" name="email" required>
+            <textarea name="message" placeholder="Tell us about your project, timeline, and any specific requirements..." maxlength="500" required></textarea>
+
+            <select name="service" required>
+              <option disabled selected>Select a service</option>
+              <option>Professional Fashion Retouching</option>
+              <option>High-End Beauty Retouching</option>
+              <option>Jewellery Enhancement Retouching</option>
+              <option>Product Photography Enhancement</option>
+              <option>E-commerce Image Optimization</option>
+              <option>Video Editing & Color Grading</option>
+              <option>Custom Creative Solutions</option>
+            </select>
+            <button type="submit">Send Message</button>
+          </form>
       </div>
 
       <!-- Contact Info -->
@@ -222,7 +224,7 @@
 
       <div class="faq-item">
         <h4>What file formats do you accept?</h4>
-        <p>We work with RAW, JPEG, TIFF, PSD, and most video formats including MP4, MOV, AVI.</p>
+        <p>We work with RAW, JPEG, TIFF, PSD, and most video formats including MP4, MOV</p>
       </div>
 
       <div class="faq-item">
@@ -232,7 +234,7 @@
 
       <div class="faq-item">
         <h4>How do you handle large files?</h4>
-        <p>We use secure cloud platforms like Dropbox, WeTransfer, or Google Drive for file transfers.</p>
+        <p>We use secure cloud platforms like WeTransfer, or Google Drive for file transfers.</p>
       </div>
     </div>
   </div>
